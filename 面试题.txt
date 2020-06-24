@@ -1,0 +1,307 @@
+
+微博：
+1、深拷贝，浅拷贝区别
+2、NSMutableArray alloc 和 arrayWithCapacity 区别，20的大小，内部实际申请多少，然后不够用的时候又申请多少。
+3、什么是平衡二叉树
+4、动态规划
+5、消息转发 应用场景
+6、TCP 和 UDP，三次握手
+7、HTTPS
+8、异步绘制的原理 （重点）
+
+
+小米：
+1、extern 的作用，define 
+2、static 全局的和局部的区别
+3、block 为什么不会给__weak的对象引用计数+1
+    3.1 https://www.jianshu.com/p/fe772a3536ca           
+    3.2 weak 修饰的对象-isa-weak_refrecerefs,block就会把你的结构体copy 到block中
+    3.3 block有两个函数，一个是obj_assgin 函数主要做引用计数+1，obj_dispose 主要做
+     引用计数-1，然后obj_assgin 拿到这个对象的结构体，会检查当前的结构体，如果结构体指针
+     检测到是被__weak修饰过则引用计数不加1，如果是被强引用则引用计数+1。
+4、RunLoop 的几种模式 可不可以组合，答案是可以自己组合
+
+
+米克世界：
+  1、runloop 添加timer时间是执行一次创建下一次的执行时间
+  2、JSCore 交互原理   
+  3、Hybrid原理    
+  4、WKWebView 和 UIWebView的区别 优缺点
+
+
+映客直播
+   1、动态库和静态库存储在什么地方,（静态库在mach.o里，动态库在bundle里边） （重点）
+   2、NSTimer 如何优化，
+   3、Tcp 4次挥手为什么4次挥手，他的每次final时间
+   4、崩溃查找，完全讲解一下 （重点）
+   5、方法交换这块可不可以同时交换多个 （重点）
+
+二面：
+
+北京音娱时光科技有限公司
+   1、锚点，frame, bounds   
+      https://www.jianshu.com/p/eb2736dab0d7
+   2、ScrollView的实现原理：改bounds
+   3、drawRect 的时机  （强化记忆一下）
+   4、autolayout
+      https://www.jianshu.com/p/ae70910ce61f
+   5、UIViewController的生命周期
+   6、消息事件传递     
+   7、NSTimer基本单位比较大  CADisplayLink 每秒刷新60次    GCD 纳米级 定时区别
+   8、动画过程中UIView 是否变了：frame直接改变了，只不过是layer在做动画。
+   9、int 变量，系统如何释放的，auto 局部变量:出了作用域自动释放在栈区执行出栈操作。
+
+
+搜狗
+   1、autolayout
+   2、MJ 思想(hook scrollView) 
+   3、离屏渲染原理，及解决方案
+
+转转
+   1、内存管理，内存溢出，内存泄漏
+   2、组件化（可以单独进行测试），插件化（apk,ipa），模块化(相互依赖的模块)
+   3、HTTP 如何做实现https的形式
+
+小米二面：
+   1、如何检测无用文件  （重点）
+   2、APNS 原理
+   3、启动优化
+      3.1 main 之前：删除无用类，无用方法，组件化二进制
+   4、framework    静态包二进制打包， 二进制打包原理
+      https://www.cnblogs.com/junhuawang/p/7598236.html
+   5、除了LRU原则还有什么其他原则:例如先进先出FIO，先进后出,随机,
+   6、JSPatch 原理
+
+百度：
+   1、25匹马 5条跑道如何尽快找出最快的那一匹  先把25批分成五组, 五组最快的,在跑一组
+   2、对一个数列进行排序，然后拼接成一个最小的一个数字
+
+平安：
+   1、自己设计一套自动释放池 （重点）
+   2、1G大小的图片的优化 ：分片处理 CATiledLayer 处理  （重点）   
+        1.异步加载
+        2.分片处理
+        3.CATileLayer
+        https://www.jianshu.com/p/2d9e58d67d87
+
+   3、merge 和 rebase 的区别
+   4、NSCahe 设计缓存
+
+
+小米:
+   1、对象如何检测到有weak 指针指向   
+        https://www.jianshu.com/p/cc3e340edfff9
+   2、aotumic 为什么枷锁也不安全
+        https://www.jianshu.com/p/e286d2907bf7      
+        https://blog.csdn.net/weixin_30734435/article/details/96600913
+   3、苹果的看门狗 (启动20，恢复10，悬挂10，退出6，后台运行10分钟)
+   4、扩展类如何加到原类的方法列表：（Person run ， Person-A run),  add方法
+        https://www.jianshu.com/p/dd57c39a5e4c
+   5、信号（signal）崩溃源有几种, 崩溃栈在哪里取 （崩溃栈查找不到的如何处理）
+        http://www.cocoachina.com/articles/25704
+        5.1   信号中断(SGIABRT)、非法指令信号(SIGILL)、总线错误信号(SIGBUS)、段错误信号(SIGSEGV)、访问一个已经释放的对象(EXC_BAD_ACCESS)
+   6、main函数之前：什么是动态内存（malloc）
+   7、对象的结构体指针里边是否包含weak指针 : isa - > weak_refresferId
+   8、cacheList申请多大内存 502
+   9、 崩溃栈信息具体描述，（dsym 转义）
+      http://www.cocoachina.com/articles/25704
+   10、Controller视图加载时间监控
+      利用runtime机制重写loadView 及 viewDidApper 统计时间
+   11、组件的二进制化：
+      组件二进制化: https://www.jianshu.com/p/a6d0f37cdc27=  
+   12、cocoapod 源码分析 (ruby)
+   13、abort() 和 exit(0):  
+      https://www.jianshu.com/p/df80dd2b3eff
+
+ 算法
+   14：无序数组两数之和相加
+   15：对于无数数组找出比当前坐标下的值第一个大的值
+
+小米 3
+   1、bitcode原理 (中间代码）
+      https://www.jianshu.com/p/8ccda9db25b8
+     说说缺点：使用bitcode的时候会增加APP的体积，而且增加的不是一点点。
+     说说优点：不使用bitcode的话，每次更新app，资源会全下载；而用的话，更新app，只会更新一部分资源。
+   2、组件化设计，功能划分，通信，版本控制，编译速度优化，二进制化，怎么设计，怎么做
+
+
+小米2面
+  1、编译的过程都做了什么
+     https://www.jianshu.com/p/db0e78e214e5
+  2、mach.o都有什么内容
+  3、设计一个扫描无用代码类的工具
+  4、动态链接和静态链接有什么区别
+     http://www.360doc.com/content/16/0308/12/31368535_540454507.shtml      
+  5、异步解码都干了什么
+  6、为什么扩展类不可以添加属性
+  7、dispatch_once 源码 
+    https://www.jianshu.com/p/ef3f77c8b320
+
+微博2：
+  1、线程和队列的关系
+  2、路由的优化
+  3、http 缓存的优化
+  4、RN 与 H5的生命周期
+
+美术宝：
+  1、两个int 交换：中间，异或、相加相见的方式
+  2、image 优化
+
+美团
+  1、KVO 仔细研究，为什么要叫伪子类，为什么重写dealloc  
+  https://www.jianshu.com/p/0aa83ac521ba
+  2、+load +initlaize  在父类，子类，扩展类的执行顺序，以及+load initlaize为何不会被覆盖。                     
+  https://www.jianshu.com/p/bc77798fd8e6
+  Person--  PersonA ,   PersonB，PersonC 扩展类 交换run:     
+
+HR 沟通禁忌
+  https://www.zhihu.com/question/23751641
+
+
+58面试 
+ 1、有没有做防护机制，线上崩溃修复
+    https://www.jianshu.com/p/f63395599633 
+
+2、崩溃日志：
+    数组越界，野指针，内存泄漏，observer，通知，abort，watchdog，找不到方法，
+    线程死锁，地址错位，
+    Corefoundation
+    https://www.jianshu.com/p/99fa604a0e5d
+    https://blog.csdn.net/shihuboke/article/details/75452655
+
+完美世界：
+    1、 Ruby脚本 
+    2、组件化的理解
+    3、有没有做过什么工具之类的（图片管理，静态分析，二进制化(提高编译速度),shell 脚本打包，优化（页面时间统计，CPU监控，内存监控，fps监控），)
+    4、jekiens 持续集成
+
+58 同城
+    1、启动优化，动态库和静态库的区别，自定义的静态库不可以共享
+          https://zhuanlan.zhihu.com/p/39271268
+       动态库是一个没有main函数的程序，
+      自定义的动态库是被阉割的动态库，不会被其他程序共用，动态库本身最大的特点是被共享。
+    2、自动释放池 如何释放一个for循环的 （TLS）
+            autoreleasePool 是一个局部的结构体，每次进入for 循环都会生成一个新的自动释放池
+    3、Jscore的原理
+    4、RN的bundle注入 
+    5、Runtime 如何做到多个方法交换的
+      https://www.cnblogs.com/jgCho/p/11219936.html
+    6、搜索无用代码原理
+            https://www.jianshu.com/p/b1a851de2409
+            静态：全局搜索头文件，有没有alloc ,new
+            动态： 6.1 Mach-o文件中 __DATA __objc_classrefs段记录了引用类的地址，__DATA __objc_classlist段记录了所有类的地址，取差集可以得到未使用的类的地址，然后进行符号化，就可以得到未被引用的类信息。
+    7、支付宝支付流程
+              
+    算法：【1，3，23，8，9，11，4】 奇偶分类
+   
+
+
+疑问：
+  1、自旋锁和互斥锁的区别
+    https://www.jianshu.com/p/d69495dac8cb
+    https://bestswifter.com/ios-lock/
+
+  2、自己实现一个简单的内存泄漏检测工具
+    8.1  https://www.jianshu.com/p/c479d5675bb3
+
+  3、如何设计一个scrollView
+
+  4、iOS 性能监控
+   https://www.jianshu.com/p/bc940ac493aa （有点模糊还要再看）
+  卡顿，页面启动时间（loadView 时间开始，viewDidAppear:结束时间 hook ViewContoller  的两个函数）
+
+  5、数据库优化
+  https://www.jianshu.com/p/665ae5ed36ec 
+  5.1 合并事务，显性事务，多线程操作
+
+皇包车
+ 1、数据库的优化
+ 2、tableView的优化
+
+优化点：
+1、检测代码 OSLint 代码检测。
+2、缩小包体积:资源、废弃类、废弃方法。AppCode,MachView,LinkMap.
+3、策略：二进制文件缩小，去掉一些不必须的指令集：x86,打包的时候去掉x86。
+        https://www.jianshu.com/p/d27577f2f8c2
+
+4、提高编译速度：缩短编译时间，编译的各个时间启动时间。
+5、收集崩溃率，减小崩溃。
+6、单元测试
+7、灰度发布:Textflight, jekeins 可持续化集成。
+8、通用的组件。
+9、App 启动优化
+       https://www.jianshu.com/p/c9406eff7b89
+       http://www.cocoachina.com/articles/24423
+
+
+百度：
+  1、sqlite ，FMDB, CoreData 区别，处理大量任务如何处理
+  2、Runloop的应用
+  3、AFN 和 request 的区别
+  4、block 为什么要添加到堆区
+  5、iOS沙盒目录中 Documents Library tmp的作用和区别
+    https://blog.csdn.net/oik_ios/article/details/24669855
+  6、索引的作用
+  7、动态创建的类为什么可以添加属性
+  算法：整形数组查找相同的数。
+                二叉树如何查找到某一层的最大数
+                快速排序的过程
+  
+other
+1、加载到内存用的什么方式，段氏加载
+           https://www.cnblogs.com/edisonchou/p/5115242.html
+2、抽象工厂，简单工厂，工厂的区别
+3、sqlite
+4、算法，找出两个链表的共同结点
+  
+百度
+1、图层树，渲染树几种树的区别
+2、崩溃野指针的几种方式
+       https://www.cnblogs.com/xsyl/p/6055338.html
+3、两个单向链表的公共结点
+4、flutter草他妈
+5、RN 的运行原理 
+      https://www.jianshu.com/p/82a28c8b673b
+6、域名攻击
+      https://www.jianshu.com/p/b2bbb9afd3e9
+
+美团：
+
+
+自己总结的：
+1、 一亿个整数进行排序用什么算法比较好： 快排VS堆排
+      https://blog.csdn.net/Dashi_Lu/article/details/93299825
+
+2、约瑟夫问题
+     通过1、0 来标识是否还在圈内。
+
+3、斐波拉契数列问题
+     f(n) = f(n-1) + f(n-2)    f(1) = 1, f(2) = 1
+    兔子问题，阶梯问题
+
+4、 回文整数
+       求余，除法来解决
+       https://www.cnblogs.com/fanqieya/p/10795019.html
+
+5、 快排、二叉树遍历、二叉树最大深度、二分查找、堆排、希尔排序、选择排序、递归、归并
+
+6、LRU 原则、双向链表+hashMap来解决
+
+7、hashMap = 数组 + 链表
+
+8、算法28--统计文本中出现次数最多的单词（字典树）
+      https://blog.csdn.net/u014106644/article/details/84105305
+
+
+自己遇到的：
+1、链表查找倒数第几位的结点
+2、算法，找出两个链表的共同结点
+3、整形数组查找相同的数。
+4、二叉树如何查找到某一层的最大数
+5、快速排序的过程
+6、算法：【1，3，23，8，9，11，4】 奇偶分类  (位运算)
+7、无序数组两数之和相加
+8、对于无数数组找出比当前坐标下的值第一个大的值
+9、25匹马 5条跑道如何尽快找出最快的那一匹     (分五组, 比出第一, 然后再比一组)
+10、对一个数列进行排序，然后拼接成一个最小的一个数字   
+11、大括号小括号中括号是否合法的验证  (左括号 的都入栈, 碰到右括号的对应的符号出栈, 如果能完全匹配,那么栈最后应该是空,否则不合法)
