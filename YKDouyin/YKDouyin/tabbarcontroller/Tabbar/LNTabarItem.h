@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^clickedItemBlock)(NSString *_Nullable);
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LNTabarItem : UIView
+
+@property (nonatomic, assign)BOOL selected;
+
+@property (nonatomic, copy)NSString *badgeNumber;
+
+@property (nonatomic, copy)clickedItemBlock clickedBlock;
 
 - (instancetype)initWithFrame:(CGRect)frame andTitle:(NSString *)title;
 

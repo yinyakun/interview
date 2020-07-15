@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,13 @@
 		866C98C524BD8E1400999B95 /* LNMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866C98C424BD8E1400999B95 /* LNMeViewController.m */; };
 		866C98C824BD98FF00999B95 /* LNTabarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 866C98C724BD98FF00999B95 /* LNTabarItem.m */; };
 		866C98CB24BD9A5C00999B95 /* UIViewController+LNTabaritem.m in Sources */ = {isa = PBXBuildFile; fileRef = 866C98CA24BD9A5C00999B95 /* UIViewController+LNTabaritem.m */; };
+		866C98CF24BEC9E000999B95 /* LNPlayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 866C98CD24BEC9E000999B95 /* LNPlayTableViewCell.m */; };
+		866C98D024BEC9E000999B95 /* LNPlayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 866C98CE24BEC9E000999B95 /* LNPlayTableViewCell.xib */; };
+		866C98D324BED0D800999B95 /* LNFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866C98D224BED0D800999B95 /* LNFocusViewController.m */; };
+		866C98D624BED0ED00999B95 /* LNSugestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866C98D524BED0ED00999B95 /* LNSugestViewController.m */; };
+		866C98D924BED3B400999B95 /* LNHomeNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 866C98D824BED3B400999B95 /* LNHomeNavigationView.m */; };
+		866C98DD24BED4B800999B95 /* LNImageMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 866C98DC24BED4B800999B95 /* LNImageMaker.m */; };
+		866C98E024BEDEB500999B95 /* LNRightSocialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 866C98DF24BEDEB500999B95 /* LNRightSocialView.m */; };
 		E6A8667556912B3B1E2D7DEB /* Pods_YKDouyin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331E4A946CAB793CAD5FB8F4 /* Pods_YKDouyin.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +98,19 @@
 		866C98C724BD98FF00999B95 /* LNTabarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNTabarItem.m; sourceTree = "<group>"; };
 		866C98C924BD9A5C00999B95 /* UIViewController+LNTabaritem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LNTabaritem.h"; sourceTree = "<group>"; };
 		866C98CA24BD9A5C00999B95 /* UIViewController+LNTabaritem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LNTabaritem.m"; sourceTree = "<group>"; };
+		866C98CC24BEC9E000999B95 /* LNPlayTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNPlayTableViewCell.h; sourceTree = "<group>"; };
+		866C98CD24BEC9E000999B95 /* LNPlayTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNPlayTableViewCell.m; sourceTree = "<group>"; };
+		866C98CE24BEC9E000999B95 /* LNPlayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LNPlayTableViewCell.xib; sourceTree = "<group>"; };
+		866C98D124BED0D800999B95 /* LNFocusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNFocusViewController.h; sourceTree = "<group>"; };
+		866C98D224BED0D800999B95 /* LNFocusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNFocusViewController.m; sourceTree = "<group>"; };
+		866C98D424BED0ED00999B95 /* LNSugestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNSugestViewController.h; sourceTree = "<group>"; };
+		866C98D524BED0ED00999B95 /* LNSugestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNSugestViewController.m; sourceTree = "<group>"; };
+		866C98D724BED3B400999B95 /* LNHomeNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNHomeNavigationView.h; sourceTree = "<group>"; };
+		866C98D824BED3B400999B95 /* LNHomeNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNHomeNavigationView.m; sourceTree = "<group>"; };
+		866C98DB24BED4B800999B95 /* LNImageMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNImageMaker.h; sourceTree = "<group>"; };
+		866C98DC24BED4B800999B95 /* LNImageMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNImageMaker.m; sourceTree = "<group>"; };
+		866C98DE24BEDEB500999B95 /* LNRightSocialView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNRightSocialView.h; sourceTree = "<group>"; };
+		866C98DF24BEDEB500999B95 /* LNRightSocialView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNRightSocialView.m; sourceTree = "<group>"; };
 		D1E3DF29DD5590236CB863AD /* Pods_YKDouyinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YKDouyinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB17AA9C82A22AD61D1F2CA4 /* Pods-YKDouyin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKDouyin.debug.xcconfig"; path = "Target Support Files/Pods-YKDouyin/Pods-YKDouyin.debug.xcconfig"; sourceTree = "<group>"; };
 		FBA816B427667C8BB8DBA0A9 /* Pods-YKDouyin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKDouyin.release.xcconfig"; path = "Target Support Files/Pods-YKDouyin/Pods-YKDouyin.release.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +194,7 @@
 		866C986C24BD86FC00999B95 /* YKDouyin */ = {
 			isa = PBXGroup;
 			children = (
+				866C98DA24BED49D00999B95 /* helpers */,
 				866C98A224BD884C00999B95 /* tabbarcontroller */,
 				866C986D24BD86FC00999B95 /* AppDelegate.h */,
 				866C986E24BD86FC00999B95 /* AppDelegate.m */,
@@ -242,6 +263,17 @@
 			children = (
 				866C98B124BD8DAE00999B95 /* LNHomeViewController.h */,
 				866C98B224BD8DAE00999B95 /* LNHomeViewController.m */,
+				866C98D124BED0D800999B95 /* LNFocusViewController.h */,
+				866C98D224BED0D800999B95 /* LNFocusViewController.m */,
+				866C98D424BED0ED00999B95 /* LNSugestViewController.h */,
+				866C98D524BED0ED00999B95 /* LNSugestViewController.m */,
+				866C98CC24BEC9E000999B95 /* LNPlayTableViewCell.h */,
+				866C98CD24BEC9E000999B95 /* LNPlayTableViewCell.m */,
+				866C98CE24BEC9E000999B95 /* LNPlayTableViewCell.xib */,
+				866C98D724BED3B400999B95 /* LNHomeNavigationView.h */,
+				866C98D824BED3B400999B95 /* LNHomeNavigationView.m */,
+				866C98DE24BEDEB500999B95 /* LNRightSocialView.h */,
+				866C98DF24BEDEB500999B95 /* LNRightSocialView.m */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -280,6 +312,15 @@
 				866C98C424BD8E1400999B95 /* LNMeViewController.m */,
 			);
 			path = me;
+			sourceTree = "<group>";
+		};
+		866C98DA24BED49D00999B95 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				866C98DB24BED4B800999B95 /* LNImageMaker.h */,
+				866C98DC24BED4B800999B95 /* LNImageMaker.m */,
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,6 +434,7 @@
 				866C987D24BD86FC00999B95 /* LaunchScreen.storyboard in Resources */,
 				866C987A24BD86FC00999B95 /* Assets.xcassets in Resources */,
 				866C987824BD86FC00999B95 /* Main.storyboard in Resources */,
+				866C98D024BEC9E000999B95 /* LNPlayTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +562,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				866C98DD24BED4B800999B95 /* LNImageMaker.m in Sources */,
 				866C987524BD86FC00999B95 /* ViewController.m in Sources */,
 				866C986F24BD86FC00999B95 /* AppDelegate.m in Sources */,
 				866C98CB24BD9A5C00999B95 /* UIViewController+LNTabaritem.m in Sources */,
@@ -527,12 +570,17 @@
 				866C988024BD86FC00999B95 /* main.m in Sources */,
 				866C98BB24BD8DE000999B95 /* LNPublishViewController.m in Sources */,
 				866C98B724BD8DC400999B95 /* LocationViewController.m in Sources */,
+				866C98D624BED0ED00999B95 /* LNSugestViewController.m in Sources */,
+				866C98E024BEDEB500999B95 /* LNRightSocialView.m in Sources */,
 				866C98BF24BD8DF500999B95 /* LNInformationViewController.m in Sources */,
 				866C98AD24BD8AF300999B95 /* YKConstants.m in Sources */,
+				866C98CF24BEC9E000999B95 /* LNPlayTableViewCell.m in Sources */,
 				866C98AA24BD8A6B00999B95 /* YKTabbar.m in Sources */,
 				866C98A524BD888500999B95 /* LNBaseTabbarViewController.m in Sources */,
 				866C98B324BD8DAE00999B95 /* LNHomeViewController.m in Sources */,
+				866C98D924BED3B400999B95 /* LNHomeNavigationView.m in Sources */,
 				866C98C824BD98FF00999B95 /* LNTabarItem.m in Sources */,
+				866C98D324BED0D800999B95 /* LNFocusViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
