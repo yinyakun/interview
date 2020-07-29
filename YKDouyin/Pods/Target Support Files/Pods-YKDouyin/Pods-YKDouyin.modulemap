@@ -1,0 +1,6 @@
+framework module Pods_YKDouyin {
+  umbrella header "Pods-YKDouyin-umbrella.h"
+
+  export *
+  module * { export * }
+}
